@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 70%;
+  display: grid;
+  place-items: center;
+  background-color: white;
+}
+
+#login-button {
+  width: 100%;
+  padding: 7px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  background-color: #a82091;
+  cursor: pointer;
+  outline: none;
+}
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.password-form-field {
+  border-color: blue;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  border-color: blue;
+  margin-bottom: 10px;
+}
+
+
