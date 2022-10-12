@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Courier New', monospace;
+}
+input {
+    height: 45px;
+    width: 100%;
+    color: #385983;
+    font-size: 14px;
+    line-height: 16px;
+    border: 2px solid #E9F2FF;
+    border-radius: 5px;
+    padding-left: 25px;
+}
+input:focus {
+    outline: none;
+    border: 2px solid #C1D9FD;
+}
+form {
+    background-image: url(https://images.wallpaperscraft.ru/image/single/neon_formy_treugolnik_136393_1280x720.jpg) ;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    width: 534px;
+    height: 534px;
+}
+.form-title {
+    color: #30507D;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    line-height: 23px;
+    margin-bottom: 38px;
+}
+.input.error {
+    border-color: red;
+}
+.checkbox__label {
+    user-select: none;
+}
+
+.checkbox__input.error + .checkbox__label {
+    color: red;
+}
+
+.register-form-container {
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    max-width: 415px;
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(217, 229, 255, 0.7);
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+    animation-name: fadeForm;
+    animation-duration: .7s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeForm {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: .35;
+    }
+    50% {
+        opacity: .5;
+    }
+    75% {
+        opacity: .75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.form-field {
+    margin-bottom: 13px;
+
+}
+.button {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    height: 45px;
+    width: 355px;
+    background: #245FFF;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 45px;
+    font-family: 'Courier New', monospace;
+    font-size: 1.5vw;
+}
+a.button {
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #0D6CF2;
+
+}
+.divider {
+    font-weight: 500;
+    font-style: 12px;
+    line-height: 14px;
+    color: #405D87;
+}
+.error {
+    border:2px solid red;
+  }
+
+  #login-form {
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #login-button {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #a82091;
+    cursor: pointer;
+    outline: none;
+  }
+
+.popa {
+    border-color: blue;
+}
