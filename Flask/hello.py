@@ -112,7 +112,6 @@ def change_mode():
     if request.method == "POST":
         resp = make_response(redirect(url_for('films_list'), 302))
         userInput = request.form.get("userInput")
-        print(userInput)
         if userInput == 'True':
             resp.set_cookie('theme', 'dark')
         else:
